@@ -4,13 +4,14 @@ $transparent-black: rgba(53, 49, 49, 0.5);
 $transparent-white: rgba(255, 255, 255, 0.1);
 $helmet-red: #c23838;
 $helmet-gold: #a38d65;
+$bg-color: #292928;
 
 body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #292928;
+  background-color: $bg-color;
 }
 
 @mixin flex-center {
@@ -33,7 +34,15 @@ body {
   max-width: 100%;
 }
 
-// ---------------------------Video Text-----------------------------
+footer {
+  padding: 10px;
+  background-color: $transparent-black;
+  text-align: center;
+  font-size: 12px;
+  color: $white-text;
+}
+
+//* ----------------------------------------Logo - Follow-------------------------------------------- */
 .logo {
   position: absolute;
   color: $white-text;
@@ -45,15 +54,26 @@ body {
   }
 }
 
-/* --------------------------------------------------Footer------------------------------------------------- */
-footer {
-  padding: 10px;
-  background-color: $transparent-black;
-  text-align: center;
-  font-size: 12px;
+.follow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: $white-text;
+  text-align: center;
+  img {
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+  }
 }
 
+.follow-bg {
+  background: $transparent-white;
+}
+
+/* --------------------------------------------------Packages------------------------------------------------- */
 .text-index {
   position: absolute;
   top: 70%;
@@ -75,22 +95,6 @@ footer {
   text-align: center;
 }
 
-.follow {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: $white-text;
-  text-align: center;
-}
-
-.follow img {
-  width: 50px;
-  height: auto;
-  padding: 5px;
-  cursor: pointer;
-}
-
 .about-follow {
   position: absolute;
   left: 50%;
@@ -107,10 +111,6 @@ footer {
     padding: 10px;
     cursor: pointer;
   }
-}
-
-.about-follow2 {
-  background: $transparent-white;
 }
 
 .join-today {
@@ -175,6 +175,7 @@ footer {
   text-align: center;
 }
 
+/* --------------------------------------- IMG BG----------------------------------------------- */
 #leon-bg {
   min-height: 1080px;
   width: auto;
@@ -244,9 +245,9 @@ footer {
 @media (max-width: 1600px) {
   .logo {
     top: 30%;
-  }
-  .logo img {
-    width: 200px;
+    img {
+      width: 200px;
+    }
   }
 }
 
@@ -272,15 +273,15 @@ footer {
   }
   .text-index {
     top: 45%;
-  }
-  .text-index h1 {
-    font-size: 14px;
+    h1 {
+      font-size: 14px;
+    }
   }
   .follow {
     top: 80%;
-  }
-  .follow img {
-    width: 40px;
+    img {
+      width: 40px;
+    }
   }
   body {
     overflow-x: hidden;
@@ -328,7 +329,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
