@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Fit4Life</title>
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+            <div class="container">
+                <div class="topnav" id="myTopnav">
+                    <a class="active" href="{% url 'index' %}">HOME</a>
+                    <a href="{% url 'packages' %}">PACKAGES</a>
+                    <a href="{% url 'about' %}">ABOUT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <video loop muted autoplay poster="/static/images/video.mp4" class="video-background">
+                    <source src="/static/images/video.mp4" type="video/mp4">
+                </video>
+                <div class="logo">
+                    <img src="/static/images/fit4life.png" alt="Logo">
+                </div>
+                <div class="text-index">
+                    <h1>30-DAY ONE-PUNCH MAN CHALLENGE</h1>
+                    <a class="join-today" href="{% url 'packages' %}"><h1 class="join-today">JOIN TODAY</h1></a>
+                </div>
+            </div>
+
+            <div class="container" id="deadlift-bg">
+                <div class="text-index">
+                    <h1>WE BELIVE THAT EVERY <br>
+                        INDIVIDUAL HAS THE CAPACITY <br>
+                        TO BE LIKE THE ATHLETES THEY <br>
+                        ADMIRE, AND TO TRAIN LIKE THEM! <br>
+                    </h1>
+                </div>
+                <div class="follow">
+                    <h2>FOLLOW US</h2>
+                    <img src="/static/images/facebook (1).svg" alt="Facebook">
+                    <img src="/static/images/instagram.svg" alt="Instagram">
+                    <img src="/static/images/twitter.svg" alt="Twitter">
+                </div>
+            </div>
+            
+            
+            <footer>
+                <p>2020 FIT 4 LIFE. ALL RIGHTS RESERVED. DESIGN BY ISMET NASIĆ &copy;</p>
+            </footer>
+    </body>
+    <script src="/static/js/navbar.js"></script>
+</html>

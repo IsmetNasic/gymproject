@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>about</title>
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="{% url 'index' %}">HOME</a>
+            <a href="{% url 'packages' %}">PACKAGES</a>
+            <a class="active" href="{% url 'about' %}">ABOUT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+            <div class="container" id="about-bg" >
+                <div class="about-imgtxt">
+                    <div class="about-div">
+                        <img src="/static/images/sat0.png">
+                        <h3>Opening hours:</h3>
+                        <p><strong>Monday - Friday:</strong> 09:00 - 23:00</p>
+                        <p><strong>Saturday - Sunday:</strong> 10:00 - 00:00</p>
+                    </div>
+                    <div class="about-div">
+                        <img src="/static/images/rezervacije0.png">
+                        <h3>Contact</h3>
+                        <p><strong>Phone: </strong>+387 000 000</p>
+                        <p><strong>Email: </strong>fit4life@email.com</p>
+                    </div>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23212.481988252297!2d17.808250693868008!3d43.34439033646391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27ce76a6c6cbb697!2sFitness%20centar%20Fit4Life!5e0!3m2!1sen!2sba!4v1604261880658!5m2!1sen!2sba" class="map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>                    
+                </div>
+
+                <div class="about-follow">
+                    <h2>FOLLOW US</h2>
+                    <div class="about-follow2">
+                        <img src="/static/images/facebook (1).svg" alt="Facebook">
+                        <img src="/static/images/instagram.svg" alt="Instagram">
+                        <img src="/static/images/twitter.svg" alt="Twitter">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>2020 FIT 4 LIFE. ALL RIGHTS RESERVED. DESIGN BY ISMET NASIĆ &copy;</p>
+            </footer>
+    </body>
+    <script src="/static/js/navbar.js"></script>
+</html>
